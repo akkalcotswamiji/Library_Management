@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile | Library Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="profile-page">
+
+        <header class="topbar">
+            <div>
+                <h1>Admin Profile</h1>
+                <p>Manage your administrator account</p>
+            </div>
+        </header>
+
+        <!-- PROFILE HEADER -->
+        <section class="profile-header">
+
+            <div class="profile-avatar">
+                <span id="avatarInitial">A</span>
+            </div>
+
+            <div>
+                <h2 id="profileDisplayName">Loading...</h2>
+                <p>Library Administrator</p>
+                <span class="profile-status">Active Account</span>
+            </div>
+
+        </section>
+
+        <!-- PERSONAL INFORMATION -->
+        <section class="profile-card">
+
+            <div class="profile-section-heading">
+                <div>
+                    <h2>Personal Information</h2>
+                    <p>Update your administrator details.</p>
+                </div>
+            </div>
+
+            <form id="profileForm">
+
+                <div class="profile-form-grid">
+
+                    <div>
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone">
+                    </div>
+
+                </div>
+
+                <button type="submit" class="primary-btn">
+                    Save Changes
+                </button>
+
+                <p id="profileMessage"></p>
+
+            </form>
+
+        </section>
+
+        <!-- PASSWORD SETTINGS -->
+        <section class="profile-card">
+
+            <div class="profile-section-heading">
+                <div>
+                    <h2>Security Settings</h2>
+                    <p>Change your administrator password.</p>
+                </div>
+            </div>
+
+            <form id="passwordForm">
+
+                <div class="profile-form-grid">
+
+                    <div>
+                        <label for="currentPassword">Current Password</label>
+                        <input
+                            type="password"
+                            id="currentPassword"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="newPassword">New Password</label>
+                        <input
+                            type="password"
+                            id="newPassword"
+                            minlength="8"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="confirmPassword">Confirm New Password</label>
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            minlength="8"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <button type="submit" class="primary-btn">
+                    Update Password
+                </button>
+
+                <p id="passwordMessage"></p>
+
+            </form>
+
+        </section>
+
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+
+    </div>
+
+    <script src="js/profile.js"></script>
+
+</body>
+</html>

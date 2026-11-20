@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issued Books | Library Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <h1>Issued Books</h1>
+                    <p>Manage book issues and returns</p>
+                </div>
+            </header>
+
+            <section class="content-section">
+
+                <!-- STATISTICS -->
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <p>Total Issued</p>
+                        <h2 id="totalIssued">0</h2>
+                    </div>
+
+                    <div class="stat-card">
+                        <p>Currently Issued</p>
+                        <h2 id="currentlyIssued">0</h2>
+                    </div>
+
+                    <div class="stat-card">
+                        <p>Returned</p>
+                        <h2 id="totalReturned">0</h2>
+                    </div>
+
+                    <div class="stat-card">
+                        <p>Overdue</p>
+                        <h2 id="totalOverdue">0</h2>
+                    </div>
+
+                </div>
+
+                <!-- ISSUE BOOK FORM -->
+                <div class="section-heading">
+                    <div>
+                        <h2>Issue a Book</h2>
+                        <p>Assign an available book to a registered student.</p>
+                    </div>
+                </div>
+
+                <div class="table-container issue-form-container">
+
+                    <form id="issueForm">
+
+                        <div class="form-grid">
+
+                            <div>
+                                <label for="studentSelect">Select Student</label>
+
+                                <select id="studentSelect" name="student_id" required>
+                                    <option value="">Loading students...</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="bookSelect">Select Book</label>
+
+                                <select id="bookSelect" name="book_id" required>
+                                    <option value="">Loading books...</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="issueDate">Issue Date</label>
+
+                                <input
+                                    type="date"
+                                    id="issueDate"
+                                    name="issue_date"
+                                    required
+                                >
+                            </div>
+
+                            <div>
+                                <label for="dueDate">Due Date</label>
+
+                                <input
+                                    type="date"
+                                    id="dueDate"
+                                    name="due_date"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="primary-btn">
+                            + Issue Book
+                        </button>
+
+                        <p id="issueMessage"></p>
+
+                    </form>
+
+                </div>
+
+                <!-- ISSUED BOOK RECORDS -->
+                <div class="section-heading records-heading">
+
+                    <div>
+                        <h2>Issued Books Records</h2>
+                        <p>Track all issued and returned books.</p>
+                    </div>
+
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search-container">
+
+                    <input
+                        type="text"
+                        id="searchIssue"
+                        placeholder="Search by student or book..."
+                    >
+
+                </div>
+
+                <!-- TABLE -->
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Issue ID</th>
+                                <th>Student</th>
+                                <th>Book</th>
+                                <th>Issue Date</th>
+                                <th>Due Date</th>
+                                <th>Return Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="issuesTable">
+
+                            <tr>
+                                <td colspan="8">Loading records...</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/issues.js"></script>
+
+</body>
+</html>

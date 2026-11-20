@@ -1,0 +1,3440 @@
+{
+    "type": "MySQLNotebook",
+    "version": "1.0",
+    "caption": "DB Notebook 1",
+    "content": "\\about\nSELECT * FROM `library_management`.`books`\nSELECT * FROM `library_management`.`categories`\nSELECT * FROM `library_management`.`issued_books`\nSELECT * FROM `library_management`.`students`\nSELECT * FROM `library_management`.`admins`\nTables\nSELECT * FROM `library_management`.`admins`\nSELECT * FROM `library_management`.`books`\nSELECT * FROM `library_management`.`categories`\nSELECT * FROM `library_management`.`issued_books`\nSELECT * FROM `library_management`.`students`\n",
+    "options": {
+        "tabSize": 4,
+        "insertSpaces": true,
+        "indentSize": 4,
+        "defaultEOL": "CRLF",
+        "trimAutoWhitespace": true
+    },
+    "viewState": {
+        "cursorState": [
+            {
+                "inSelectionMode": false,
+                "selectionStart": {
+                    "lineNumber": 13,
+                    "column": 1
+                },
+                "position": {
+                    "lineNumber": 13,
+                    "column": 1
+                }
+            }
+        ],
+        "viewState": {
+            "scrollLeft": 0,
+            "firstPosition": {
+                "lineNumber": 11,
+                "column": 1
+            },
+            "firstPositionDeltaTop": 119
+        },
+        "contributionsState": {
+            "editor.contrib.folding": {},
+            "editor.contrib.wordHighlighter": false
+        }
+    },
+    "contexts": [
+        {
+            "state": {
+                "start": 1,
+                "end": 1,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 2,
+                            "content": "Welcome to the DB Notebook.\n\nUse DB Notebooks to explore MySQL data with executable SQL, JavaScript, and TypeScript code blocks.\n\n* Press Ctrl+Enter to execute or re-execute the selected code block.\n* Use Up and Down keys to move between code blocks.\n* Use Ctrl+Up and Ctrl+Down to navigate through the command history.\n\n* Execute \\sql to switch to SQL, \\js to JavaScript and \\ts to TypeScript mode.\n* Execute \\help or \\? for help;",
+                            "language": "ansi"
+                        }
+                    ]
+                },
+                "currentHeight": 213,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 6
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 2,
+                "end": 2,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "19637bc8-b47b-44ba-e425-00faaec7a9c5"
+                    ]
+                },
+                "currentHeight": 352,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 42
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "77416165-927d-46bb-ca92-ce5b7f6dd04d",
+                    "resultId": "19637bc8-b47b-44ba-e425-00faaec7a9c5",
+                    "rows": [
+                        {
+                            "0": 1,
+                            "1": "The Alchemist",
+                            "2": "Paulo Coelho",
+                            "3": 1,
+                            "4": 10,
+                            "5": 9
+                        },
+                        {
+                            "0": 2,
+                            "1": "Harry Potter",
+                            "2": "J.K. Rowling",
+                            "3": 1,
+                            "4": 8,
+                            "5": 7
+                        },
+                        {
+                            "0": 3,
+                            "1": "Clean Code",
+                            "2": "Robert C. Martin",
+                            "3": 2,
+                            "4": 5,
+                            "5": 3
+                        },
+                        {
+                            "0": 4,
+                            "1": "Introduction to Algorithms",
+                            "2": "Thomas H. Cormen",
+                            "3": 2,
+                            "4": 6,
+                            "5": 5
+                        },
+                        {
+                            "0": 5,
+                            "1": "A Brief History of Time",
+                            "2": "Stephen Hawking",
+                            "3": 3,
+                            "4": 4,
+                            "5": 3
+                        },
+                        {
+                            "0": 6,
+                            "1": "Atomic Habits",
+                            "2": "James Clear",
+                            "3": 4,
+                            "4": 7,
+                            "5": 7
+                        },
+                        {
+                            "0": 7,
+                            "1": "The Silent Patient",
+                            "2": "Alex Michaelides",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 8,
+                            "1": "Wings of Fire",
+                            "2": "A.P.J. Abdul Kalam",
+                            "3": 6,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 9,
+                            "1": "Pride and Prejudice",
+                            "2": "Jane Austen",
+                            "3": 1,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 10,
+                            "1": "The Great Gatsby",
+                            "2": "F. Scott Fitzgerald",
+                            "3": 1,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 11,
+                            "1": "To Kill a Mockingbird",
+                            "2": "Harper Lee",
+                            "3": 1,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 12,
+                            "1": "1984",
+                            "2": "George Orwell",
+                            "3": 1,
+                            "4": 7,
+                            "5": 7
+                        },
+                        {
+                            "0": 13,
+                            "1": "Animal Farm",
+                            "2": "George Orwell",
+                            "3": 1,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 14,
+                            "1": "The Catcher in the Rye",
+                            "2": "J.D. Salinger",
+                            "3": 1,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 15,
+                            "1": "Little Women",
+                            "2": "Louisa May Alcott",
+                            "3": 1,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 16,
+                            "1": "Jane Eyre",
+                            "2": "Charlotte Bronte",
+                            "3": 1,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 17,
+                            "1": "The Book Thief",
+                            "2": "Markus Zusak",
+                            "3": 1,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 18,
+                            "1": "The Kite Runner",
+                            "2": "Khaled Hosseini",
+                            "3": 1,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 19,
+                            "1": "The Fault in Our Stars",
+                            "2": "John Green",
+                            "3": 1,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 20,
+                            "1": "The Hobbit",
+                            "2": "J.R.R. Tolkien",
+                            "3": 1,
+                            "4": 7,
+                            "5": 7
+                        },
+                        {
+                            "0": 21,
+                            "1": "The Lord of the Rings",
+                            "2": "J.R.R. Tolkien",
+                            "3": 1,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 22,
+                            "1": "The Midnight Library",
+                            "2": "Matt Haig",
+                            "3": 1,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 23,
+                            "1": "A Thousand Splendid Suns",
+                            "2": "Khaled Hosseini",
+                            "3": 1,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 24,
+                            "1": "The Secret Garden",
+                            "2": "Frances Hodgson Burnett",
+                            "3": 1,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 25,
+                            "1": "The Pragmatic Programmer",
+                            "2": "Andrew Hunt",
+                            "3": 2,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 26,
+                            "1": "Introduction to Java Programming",
+                            "2": "Y. Daniel Liang",
+                            "3": 2,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 27,
+                            "1": "Artificial Intelligence: A Modern Approach",
+                            "2": "Stuart Russell",
+                            "3": 2,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 28,
+                            "1": "Computer Networks",
+                            "2": "Andrew Tanenbaum",
+                            "3": 2,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 29,
+                            "1": "Operating System Concepts",
+                            "2": "Abraham Silberschatz",
+                            "3": 2,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 30,
+                            "1": "Database System Concepts",
+                            "2": "Abraham Silberschatz",
+                            "3": 2,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 31,
+                            "1": "Python Crash Course",
+                            "2": "Eric Matthes",
+                            "3": 2,
+                            "4": 7,
+                            "5": 7
+                        },
+                        {
+                            "0": 32,
+                            "1": "Head First Java",
+                            "2": "Kathy Sierra",
+                            "3": 2,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 33,
+                            "1": "The Art of Computer Programming",
+                            "2": "Donald Knuth",
+                            "3": 2,
+                            "4": 3,
+                            "5": 3
+                        },
+                        {
+                            "0": 34,
+                            "1": "Clean Architecture",
+                            "2": "Robert C. Martin",
+                            "3": 2,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 35,
+                            "1": "Code Complete",
+                            "2": "Steve McConnell",
+                            "3": 2,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 36,
+                            "1": "Eloquent JavaScript",
+                            "2": "Marijn Haverbeke",
+                            "3": 2,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 37,
+                            "1": "Computer Organization",
+                            "2": "Carl Hamacher",
+                            "3": 2,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 38,
+                            "1": "Learning SQL",
+                            "2": "Alan Beaulieu",
+                            "3": 2,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 39,
+                            "1": "Design Patterns",
+                            "2": "Erich Gamma",
+                            "3": 2,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 40,
+                            "1": "The Self-Taught Programmer",
+                            "2": "Cory Althoff",
+                            "3": 2,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 41,
+                            "1": "Cosmos",
+                            "2": "Carl Sagan",
+                            "3": 3,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 42,
+                            "1": "The Origin of Species",
+                            "2": "Charles Darwin",
+                            "3": 3,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 43,
+                            "1": "A Short History of Nearly Everything",
+                            "2": "Bill Bryson",
+                            "3": 3,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 44,
+                            "1": "The Gene",
+                            "2": "Siddhartha Mukherjee",
+                            "3": 3,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 45,
+                            "1": "The Elegant Universe",
+                            "2": "Brian Greene",
+                            "3": 3,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 46,
+                            "1": "The Selfish Gene",
+                            "2": "Richard Dawkins",
+                            "3": 3,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 47,
+                            "1": "The Body",
+                            "2": "Bill Bryson",
+                            "3": 3,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 48,
+                            "1": "Astrophysics for People in a Hurry",
+                            "2": "Neil deGrasse Tyson",
+                            "3": 3,
+                            "4": 7,
+                            "5": 7
+                        },
+                        {
+                            "0": 49,
+                            "1": "The Immortal Life of Henrietta Lacks",
+                            "2": "Rebecca Skloot",
+                            "3": 3,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 50,
+                            "1": "The Fabric of the Cosmos",
+                            "2": "Brian Greene",
+                            "3": 3,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 51,
+                            "1": "Silent Spring",
+                            "2": "Rachel Carson",
+                            "3": 3,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 52,
+                            "1": "The Grand Design",
+                            "2": "Stephen Hawking",
+                            "3": 3,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 53,
+                            "1": "Why We Sleep",
+                            "2": "Matthew Walker",
+                            "3": 3,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 54,
+                            "1": "The Hidden Life of Trees",
+                            "2": "Peter Wohlleben",
+                            "3": 3,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 55,
+                            "1": "The Order of Time",
+                            "2": "Carlo Rovelli",
+                            "3": 3,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 56,
+                            "1": "Deep Work",
+                            "2": "Cal Newport",
+                            "3": 4,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 57,
+                            "1": "The 7 Habits of Highly Effective People",
+                            "2": "Stephen Covey",
+                            "3": 4,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 58,
+                            "1": "Think and Grow Rich",
+                            "2": "Napoleon Hill",
+                            "3": 4,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 59,
+                            "1": "Mindset",
+                            "2": "Carol S. Dweck",
+                            "3": 4,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 60,
+                            "1": "The Power of Now",
+                            "2": "Eckhart Tolle",
+                            "3": 4,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 61,
+                            "1": "Grit",
+                            "2": "Angela Duckworth",
+                            "3": 4,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 62,
+                            "1": "The Power of Habit",
+                            "2": "Charles Duhigg",
+                            "3": 4,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 63,
+                            "1": "Essentialism",
+                            "2": "Greg McKeown",
+                            "3": 4,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 64,
+                            "1": "The Compound Effect",
+                            "2": "Darren Hardy",
+                            "3": 4,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 65,
+                            "1": "Make Your Bed",
+                            "2": "William H. McRaven",
+                            "3": 4,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 66,
+                            "1": "Ikigai",
+                            "2": "Hector Garcia",
+                            "3": 4,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 67,
+                            "1": "The Mountain Is You",
+                            "2": "Brianna Wiest",
+                            "3": 4,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 68,
+                            "1": "The 5 AM Club",
+                            "2": "Robin Sharma",
+                            "3": 4,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 69,
+                            "1": "The Art of Being Alone",
+                            "2": "Renuka Gavrani",
+                            "3": 4,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 70,
+                            "1": "The Courage to Be Disliked",
+                            "2": "Ichiro Kishimi",
+                            "3": 4,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 71,
+                            "1": "Gone Girl",
+                            "2": "Gillian Flynn",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 72,
+                            "1": "The Girl on the Train",
+                            "2": "Paula Hawkins",
+                            "3": 5,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 73,
+                            "1": "And Then There Were None",
+                            "2": "Agatha Christie",
+                            "3": 5,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 74,
+                            "1": "Murder on the Orient Express",
+                            "2": "Agatha Christie",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 75,
+                            "1": "The Da Vinci Code",
+                            "2": "Dan Brown",
+                            "3": 5,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 76,
+                            "1": "Angels and Demons",
+                            "2": "Dan Brown",
+                            "3": 5,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 77,
+                            "1": "The Thursday Murder Club",
+                            "2": "Richard Osman",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 78,
+                            "1": "Big Little Lies",
+                            "2": "Liane Moriarty",
+                            "3": 5,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 79,
+                            "1": "The Woman in the Window",
+                            "2": "A.J. Finn",
+                            "3": 5,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 80,
+                            "1": "The Hound of the Baskervilles",
+                            "2": "Arthur Conan Doyle",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 81,
+                            "1": "The ABC Murders",
+                            "2": "Agatha Christie",
+                            "3": 5,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 82,
+                            "1": "The Reversal",
+                            "2": "Michael Connelly",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 83,
+                            "1": "The Cuckoo's Calling",
+                            "2": "Robert Galbraith",
+                            "3": 5,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 84,
+                            "1": "The Guest List",
+                            "2": "Lucy Foley",
+                            "3": 5,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 85,
+                            "1": "The Murder of Roger Ackroyd",
+                            "2": "Agatha Christie",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 86,
+                            "1": "Steve Jobs",
+                            "2": "Walter Isaacson",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 87,
+                            "1": "Wings of Fire",
+                            "2": "A.P.J. Abdul Kalam",
+                            "3": 6,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 88,
+                            "1": "The Diary of a Young Girl",
+                            "2": "Anne Frank",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 89,
+                            "1": "Long Walk to Freedom",
+                            "2": "Nelson Mandela",
+                            "3": 6,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 90,
+                            "1": "Becoming",
+                            "2": "Michelle Obama",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 91,
+                            "1": "Einstein: His Life and Universe",
+                            "2": "Walter Isaacson",
+                            "3": 6,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 92,
+                            "1": "I Am Malala",
+                            "2": "Malala Yousafzai",
+                            "3": 6,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 93,
+                            "1": "The Story of My Experiments with Truth",
+                            "2": "Mahatma Gandhi",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 94,
+                            "1": "Educated",
+                            "2": "Tara Westover",
+                            "3": 6,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 95,
+                            "1": "Alexander Hamilton",
+                            "2": "Ron Chernow",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 96,
+                            "1": "Shoe Dog",
+                            "2": "Phil Knight",
+                            "3": 6,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 97,
+                            "1": "The Autobiography of Benjamin Franklin",
+                            "2": "Benjamin Franklin",
+                            "3": 6,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 98,
+                            "1": "My Life in Full",
+                            "2": "Indra Nooyi",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 99,
+                            "1": "Open",
+                            "2": "Andre Agassi",
+                            "3": 6,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 100,
+                            "1": "The Story of My Life",
+                            "2": "Helen Keller",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 101,
+                            "1": "Surely You're Joking, Mr. Feynman!",
+                            "2": "Richard Feynman",
+                            "3": 6,
+                            "4": 4,
+                            "5": 4
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "book_id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": true,
+                            "nullable": false,
+                            "autoIncrement": true
+                        },
+                        {
+                            "title": "title",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "author",
+                            "field": "2",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "category_id",
+                            "field": "3",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": null
+                        },
+                        {
+                            "title": "quantity",
+                            "field": "4",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false,
+                            "default": "0"
+                        },
+                        {
+                            "title": "available_quantity",
+                            "field": "5",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false,
+                            "default": "0"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 101 records retrieved in 2.172ms"
+                    },
+                    "totalRowCount": 101,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT * FROM `library_management`.`books`",
+                    "updatable": true,
+                    "fullTableName": "`library_management`.`books`"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 3,
+                "end": 3,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "be6277e4-a983-4075-e52e-631926c9ec5f"
+                    ]
+                },
+                "currentHeight": 352,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 47
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "77416165-927d-46bb-ca92-ce5b7f6dd04d",
+                    "resultId": "be6277e4-a983-4075-e52e-631926c9ec5f",
+                    "rows": [
+                        {
+                            "0": 6,
+                            "1": "Biography"
+                        },
+                        {
+                            "0": 1,
+                            "1": "Fiction"
+                        },
+                        {
+                            "0": 5,
+                            "1": "Mystery"
+                        },
+                        {
+                            "0": 3,
+                            "1": "Science"
+                        },
+                        {
+                            "0": 4,
+                            "1": "Self-Help"
+                        },
+                        {
+                            "0": 2,
+                            "1": "Technology"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "category_id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": true,
+                            "nullable": false,
+                            "autoIncrement": true
+                        },
+                        {
+                            "title": "category_name",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 6 records retrieved in 3.106ms"
+                    },
+                    "totalRowCount": 6,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT * FROM `library_management`.`categories`",
+                    "updatable": true,
+                    "fullTableName": "`library_management`.`categories`"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 4,
+                "end": 4,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "6ba670d4-517b-48df-e4c9-080a4925e6a3"
+                    ]
+                },
+                "currentHeight": 352,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 49
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "77416165-927d-46bb-ca92-ce5b7f6dd04d",
+                    "resultId": "6ba670d4-517b-48df-e4c9-080a4925e6a3",
+                    "rows": [
+                        {
+                            "0": 1,
+                            "1": 11,
+                            "2": 3,
+                            "3": "2026-11-20",
+                            "4": "2026-11-28",
+                            "5": null,
+                            "6": "Issued"
+                        },
+                        {
+                            "0": 2,
+                            "1": 1,
+                            "2": 1,
+                            "3": "2026-11-20",
+                            "4": "2026-12-04",
+                            "5": null,
+                            "6": "Issued"
+                        },
+                        {
+                            "0": 3,
+                            "1": 2,
+                            "2": 2,
+                            "3": "2026-11-20",
+                            "4": "2026-12-04",
+                            "5": null,
+                            "6": "Issued"
+                        },
+                        {
+                            "0": 4,
+                            "1": 3,
+                            "2": 3,
+                            "3": "2026-11-20",
+                            "4": "2026-12-04",
+                            "5": null,
+                            "6": "Issued"
+                        },
+                        {
+                            "0": 5,
+                            "1": 4,
+                            "2": 4,
+                            "3": "2026-11-20",
+                            "4": "2026-12-04",
+                            "5": null,
+                            "6": "Issued"
+                        },
+                        {
+                            "0": 6,
+                            "1": 5,
+                            "2": 5,
+                            "3": "2026-11-20",
+                            "4": "2026-12-04",
+                            "5": null,
+                            "6": "Issued"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "issue_id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": true,
+                            "nullable": false,
+                            "autoIncrement": true
+                        },
+                        {
+                            "title": "student_id",
+                            "field": "1",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "book_id",
+                            "field": "2",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "issue_date",
+                            "field": "3",
+                            "dataType": {
+                                "type": 27,
+                                "needsQuotes": true
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "due_date",
+                            "field": "4",
+                            "dataType": {
+                                "type": 27,
+                                "needsQuotes": true
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "return_date",
+                            "field": "5",
+                            "dataType": {
+                                "type": 27,
+                                "needsQuotes": true
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": null
+                        },
+                        {
+                            "title": "status",
+                            "field": "6",
+                            "dataType": {
+                                "type": 43,
+                                "needsQuotes": true
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": "Issued"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 6 records retrieved in 0.85ms"
+                    },
+                    "totalRowCount": 6,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT * FROM `library_management`.`issued_books`",
+                    "updatable": true,
+                    "fullTableName": "`library_management`.`issued_books`"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 5,
+                "end": 5,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "18916cdd-5d06-46a3-b6fe-7e280b61fb36"
+                    ]
+                },
+                "currentHeight": 352,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 45
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "77416165-927d-46bb-ca92-ce5b7f6dd04d",
+                    "resultId": "18916cdd-5d06-46a3-b6fe-7e280b61fb36",
+                    "rows": [
+                        {
+                            "0": 1,
+                            "1": "Pratham",
+                            "2": "pratham@abc.com",
+                            "3": "$2b$10$aGIDNhJlsQqa.RvRKd7jK./kq087YtZ7BCfMKW.EYnpl3QPaTxFL.",
+                            "4": "1234567890",
+                            "5": "2026-11-20 18:11:38"
+                        },
+                        {
+                            "0": 2,
+                            "1": "Aarav Shah",
+                            "2": "aarav.shah@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500001",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 3,
+                            "1": "Diya Patel",
+                            "2": "diya.patel@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500002",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 4,
+                            "1": "Rohan Mehta",
+                            "2": "rohan.mehta@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500003",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 5,
+                            "1": "Ananya Desai",
+                            "2": "ananya.desai@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500004",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 6,
+                            "1": "Vivaan Joshi",
+                            "2": "vivaan.joshi@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500005",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 7,
+                            "1": "Isha Trivedi",
+                            "2": "isha.trivedi@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500006",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 8,
+                            "1": "Kabir Soni",
+                            "2": "kabir.soni@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500007",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 9,
+                            "1": "Myra Shah",
+                            "2": "myra.shah@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500008",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 10,
+                            "1": "Aditya Rao",
+                            "2": "aditya.rao@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500009",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 11,
+                            "1": "Sara Khan",
+                            "2": "sara.khan@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500010",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 12,
+                            "1": "Krish Patel",
+                            "2": "krish.patel@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500011",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 13,
+                            "1": "Avni Bhatt",
+                            "2": "avni.bhatt@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500012",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 14,
+                            "1": "Reyansh Shah",
+                            "2": "reyansh.shah@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500013",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 15,
+                            "1": "Kiara Modi",
+                            "2": "kiara.modi@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500014",
+                            "5": "2026-11-20 18:13:33"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "student_id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": true,
+                            "nullable": false,
+                            "autoIncrement": true
+                        },
+                        {
+                            "title": "name",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "email",
+                            "field": "2",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "password",
+                            "field": "3",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "phone",
+                            "field": "4",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": null
+                        },
+                        {
+                            "title": "created_at",
+                            "field": "5",
+                            "dataType": {
+                                "type": 26,
+                                "dateTimePrecision": 8,
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": "CURRENT_TIMESTAMP"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 15 records retrieved in 0.828ms"
+                    },
+                    "totalRowCount": 15,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT * FROM `library_management`.`students`",
+                    "updatable": true,
+                    "fullTableName": "`library_management`.`students`"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 6,
+                "end": 6,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": []
+                },
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 43
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 7,
+                "end": 7,
+                "language": "mysql",
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 6
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 8,
+                "end": 8,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "a812747b-c4ce-431f-be35-f815ac974757"
+                    ]
+                },
+                "currentHeight": 352,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 43
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "77416165-927d-46bb-ca92-ce5b7f6dd04d",
+                    "resultId": "a812747b-c4ce-431f-be35-f815ac974757",
+                    "rows": [],
+                    "columns": [
+                        {
+                            "title": "admin_id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": true,
+                            "nullable": false,
+                            "autoIncrement": true
+                        },
+                        {
+                            "title": "username",
+                            "field": "1",
+                            "dataType": {
+                                "type": 15,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "UNICODE",
+                                    "ASCII"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "One",
+                                "synonyms": [
+                                    "CHAR VARYING",
+                                    "CHARACTER VARYING",
+                                    "VARCHARACTER"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "password",
+                            "field": "2",
+                            "dataType": {
+                                "type": 15,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "UNICODE",
+                                    "ASCII"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "One",
+                                "synonyms": [
+                                    "CHAR VARYING",
+                                    "CHARACTER VARYING",
+                                    "VARCHARACTER"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "full_name",
+                            "field": "3",
+                            "dataType": {
+                                "type": 15,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "UNICODE",
+                                    "ASCII"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "One",
+                                "synonyms": [
+                                    "CHAR VARYING",
+                                    "CHARACTER VARYING",
+                                    "VARCHARACTER"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": null
+                        },
+                        {
+                            "title": "email",
+                            "field": "4",
+                            "dataType": {
+                                "type": 15,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "UNICODE",
+                                    "ASCII"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "One",
+                                "synonyms": [
+                                    "CHAR VARYING",
+                                    "CHARACTER VARYING",
+                                    "VARCHARACTER"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": null
+                        },
+                        {
+                            "title": "phone",
+                            "field": "5",
+                            "dataType": {
+                                "type": 15,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "UNICODE",
+                                    "ASCII"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "One",
+                                "synonyms": [
+                                    "CHAR VARYING",
+                                    "CHARACTER VARYING",
+                                    "VARCHARACTER"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": null
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 0 records retrieved in 2.025ms"
+                    },
+                    "totalRowCount": 0,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT * FROM `library_management`.`admins`",
+                    "updatable": true,
+                    "fullTableName": "`library_management`.`admins`"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 9,
+                "end": 9,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "eff50b83-0ee5-49d8-f892-c59e78cf92ef"
+                    ]
+                },
+                "currentHeight": 352,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 42
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "77416165-927d-46bb-ca92-ce5b7f6dd04d",
+                    "resultId": "eff50b83-0ee5-49d8-f892-c59e78cf92ef",
+                    "rows": [
+                        {
+                            "0": 1,
+                            "1": "The Alchemist",
+                            "2": "Paulo Coelho",
+                            "3": 1,
+                            "4": 10,
+                            "5": 9
+                        },
+                        {
+                            "0": 2,
+                            "1": "Harry Potter",
+                            "2": "J.K. Rowling",
+                            "3": 1,
+                            "4": 8,
+                            "5": 7
+                        },
+                        {
+                            "0": 3,
+                            "1": "Clean Code",
+                            "2": "Robert C. Martin",
+                            "3": 2,
+                            "4": 5,
+                            "5": 3
+                        },
+                        {
+                            "0": 4,
+                            "1": "Introduction to Algorithms",
+                            "2": "Thomas H. Cormen",
+                            "3": 2,
+                            "4": 6,
+                            "5": 5
+                        },
+                        {
+                            "0": 5,
+                            "1": "A Brief History of Time",
+                            "2": "Stephen Hawking",
+                            "3": 3,
+                            "4": 4,
+                            "5": 3
+                        },
+                        {
+                            "0": 6,
+                            "1": "Atomic Habits",
+                            "2": "James Clear",
+                            "3": 4,
+                            "4": 7,
+                            "5": 7
+                        },
+                        {
+                            "0": 7,
+                            "1": "The Silent Patient",
+                            "2": "Alex Michaelides",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 8,
+                            "1": "Wings of Fire",
+                            "2": "A.P.J. Abdul Kalam",
+                            "3": 6,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 9,
+                            "1": "Pride and Prejudice",
+                            "2": "Jane Austen",
+                            "3": 1,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 10,
+                            "1": "The Great Gatsby",
+                            "2": "F. Scott Fitzgerald",
+                            "3": 1,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 11,
+                            "1": "To Kill a Mockingbird",
+                            "2": "Harper Lee",
+                            "3": 1,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 12,
+                            "1": "1984",
+                            "2": "George Orwell",
+                            "3": 1,
+                            "4": 7,
+                            "5": 7
+                        },
+                        {
+                            "0": 13,
+                            "1": "Animal Farm",
+                            "2": "George Orwell",
+                            "3": 1,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 14,
+                            "1": "The Catcher in the Rye",
+                            "2": "J.D. Salinger",
+                            "3": 1,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 15,
+                            "1": "Little Women",
+                            "2": "Louisa May Alcott",
+                            "3": 1,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 16,
+                            "1": "Jane Eyre",
+                            "2": "Charlotte Bronte",
+                            "3": 1,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 17,
+                            "1": "The Book Thief",
+                            "2": "Markus Zusak",
+                            "3": 1,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 18,
+                            "1": "The Kite Runner",
+                            "2": "Khaled Hosseini",
+                            "3": 1,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 19,
+                            "1": "The Fault in Our Stars",
+                            "2": "John Green",
+                            "3": 1,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 20,
+                            "1": "The Hobbit",
+                            "2": "J.R.R. Tolkien",
+                            "3": 1,
+                            "4": 7,
+                            "5": 7
+                        },
+                        {
+                            "0": 21,
+                            "1": "The Lord of the Rings",
+                            "2": "J.R.R. Tolkien",
+                            "3": 1,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 22,
+                            "1": "The Midnight Library",
+                            "2": "Matt Haig",
+                            "3": 1,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 23,
+                            "1": "A Thousand Splendid Suns",
+                            "2": "Khaled Hosseini",
+                            "3": 1,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 24,
+                            "1": "The Secret Garden",
+                            "2": "Frances Hodgson Burnett",
+                            "3": 1,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 25,
+                            "1": "The Pragmatic Programmer",
+                            "2": "Andrew Hunt",
+                            "3": 2,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 26,
+                            "1": "Introduction to Java Programming",
+                            "2": "Y. Daniel Liang",
+                            "3": 2,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 27,
+                            "1": "Artificial Intelligence: A Modern Approach",
+                            "2": "Stuart Russell",
+                            "3": 2,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 28,
+                            "1": "Computer Networks",
+                            "2": "Andrew Tanenbaum",
+                            "3": 2,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 29,
+                            "1": "Operating System Concepts",
+                            "2": "Abraham Silberschatz",
+                            "3": 2,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 30,
+                            "1": "Database System Concepts",
+                            "2": "Abraham Silberschatz",
+                            "3": 2,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 31,
+                            "1": "Python Crash Course",
+                            "2": "Eric Matthes",
+                            "3": 2,
+                            "4": 7,
+                            "5": 7
+                        },
+                        {
+                            "0": 32,
+                            "1": "Head First Java",
+                            "2": "Kathy Sierra",
+                            "3": 2,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 33,
+                            "1": "The Art of Computer Programming",
+                            "2": "Donald Knuth",
+                            "3": 2,
+                            "4": 3,
+                            "5": 3
+                        },
+                        {
+                            "0": 34,
+                            "1": "Clean Architecture",
+                            "2": "Robert C. Martin",
+                            "3": 2,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 35,
+                            "1": "Code Complete",
+                            "2": "Steve McConnell",
+                            "3": 2,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 36,
+                            "1": "Eloquent JavaScript",
+                            "2": "Marijn Haverbeke",
+                            "3": 2,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 37,
+                            "1": "Computer Organization",
+                            "2": "Carl Hamacher",
+                            "3": 2,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 38,
+                            "1": "Learning SQL",
+                            "2": "Alan Beaulieu",
+                            "3": 2,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 39,
+                            "1": "Design Patterns",
+                            "2": "Erich Gamma",
+                            "3": 2,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 40,
+                            "1": "The Self-Taught Programmer",
+                            "2": "Cory Althoff",
+                            "3": 2,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 41,
+                            "1": "Cosmos",
+                            "2": "Carl Sagan",
+                            "3": 3,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 42,
+                            "1": "The Origin of Species",
+                            "2": "Charles Darwin",
+                            "3": 3,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 43,
+                            "1": "A Short History of Nearly Everything",
+                            "2": "Bill Bryson",
+                            "3": 3,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 44,
+                            "1": "The Gene",
+                            "2": "Siddhartha Mukherjee",
+                            "3": 3,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 45,
+                            "1": "The Elegant Universe",
+                            "2": "Brian Greene",
+                            "3": 3,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 46,
+                            "1": "The Selfish Gene",
+                            "2": "Richard Dawkins",
+                            "3": 3,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 47,
+                            "1": "The Body",
+                            "2": "Bill Bryson",
+                            "3": 3,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 48,
+                            "1": "Astrophysics for People in a Hurry",
+                            "2": "Neil deGrasse Tyson",
+                            "3": 3,
+                            "4": 7,
+                            "5": 7
+                        },
+                        {
+                            "0": 49,
+                            "1": "The Immortal Life of Henrietta Lacks",
+                            "2": "Rebecca Skloot",
+                            "3": 3,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 50,
+                            "1": "The Fabric of the Cosmos",
+                            "2": "Brian Greene",
+                            "3": 3,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 51,
+                            "1": "Silent Spring",
+                            "2": "Rachel Carson",
+                            "3": 3,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 52,
+                            "1": "The Grand Design",
+                            "2": "Stephen Hawking",
+                            "3": 3,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 53,
+                            "1": "Why We Sleep",
+                            "2": "Matthew Walker",
+                            "3": 3,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 54,
+                            "1": "The Hidden Life of Trees",
+                            "2": "Peter Wohlleben",
+                            "3": 3,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 55,
+                            "1": "The Order of Time",
+                            "2": "Carlo Rovelli",
+                            "3": 3,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 56,
+                            "1": "Deep Work",
+                            "2": "Cal Newport",
+                            "3": 4,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 57,
+                            "1": "The 7 Habits of Highly Effective People",
+                            "2": "Stephen Covey",
+                            "3": 4,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 58,
+                            "1": "Think and Grow Rich",
+                            "2": "Napoleon Hill",
+                            "3": 4,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 59,
+                            "1": "Mindset",
+                            "2": "Carol S. Dweck",
+                            "3": 4,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 60,
+                            "1": "The Power of Now",
+                            "2": "Eckhart Tolle",
+                            "3": 4,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 61,
+                            "1": "Grit",
+                            "2": "Angela Duckworth",
+                            "3": 4,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 62,
+                            "1": "The Power of Habit",
+                            "2": "Charles Duhigg",
+                            "3": 4,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 63,
+                            "1": "Essentialism",
+                            "2": "Greg McKeown",
+                            "3": 4,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 64,
+                            "1": "The Compound Effect",
+                            "2": "Darren Hardy",
+                            "3": 4,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 65,
+                            "1": "Make Your Bed",
+                            "2": "William H. McRaven",
+                            "3": 4,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 66,
+                            "1": "Ikigai",
+                            "2": "Hector Garcia",
+                            "3": 4,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 67,
+                            "1": "The Mountain Is You",
+                            "2": "Brianna Wiest",
+                            "3": 4,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 68,
+                            "1": "The 5 AM Club",
+                            "2": "Robin Sharma",
+                            "3": 4,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 69,
+                            "1": "The Art of Being Alone",
+                            "2": "Renuka Gavrani",
+                            "3": 4,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 70,
+                            "1": "The Courage to Be Disliked",
+                            "2": "Ichiro Kishimi",
+                            "3": 4,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 71,
+                            "1": "Gone Girl",
+                            "2": "Gillian Flynn",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 72,
+                            "1": "The Girl on the Train",
+                            "2": "Paula Hawkins",
+                            "3": 5,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 73,
+                            "1": "And Then There Were None",
+                            "2": "Agatha Christie",
+                            "3": 5,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 74,
+                            "1": "Murder on the Orient Express",
+                            "2": "Agatha Christie",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 75,
+                            "1": "The Da Vinci Code",
+                            "2": "Dan Brown",
+                            "3": 5,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 76,
+                            "1": "Angels and Demons",
+                            "2": "Dan Brown",
+                            "3": 5,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 77,
+                            "1": "The Thursday Murder Club",
+                            "2": "Richard Osman",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 78,
+                            "1": "Big Little Lies",
+                            "2": "Liane Moriarty",
+                            "3": 5,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 79,
+                            "1": "The Woman in the Window",
+                            "2": "A.J. Finn",
+                            "3": 5,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 80,
+                            "1": "The Hound of the Baskervilles",
+                            "2": "Arthur Conan Doyle",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 81,
+                            "1": "The ABC Murders",
+                            "2": "Agatha Christie",
+                            "3": 5,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 82,
+                            "1": "The Reversal",
+                            "2": "Michael Connelly",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 83,
+                            "1": "The Cuckoo's Calling",
+                            "2": "Robert Galbraith",
+                            "3": 5,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 84,
+                            "1": "The Guest List",
+                            "2": "Lucy Foley",
+                            "3": 5,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 85,
+                            "1": "The Murder of Roger Ackroyd",
+                            "2": "Agatha Christie",
+                            "3": 5,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 86,
+                            "1": "Steve Jobs",
+                            "2": "Walter Isaacson",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 87,
+                            "1": "Wings of Fire",
+                            "2": "A.P.J. Abdul Kalam",
+                            "3": 6,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 88,
+                            "1": "The Diary of a Young Girl",
+                            "2": "Anne Frank",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 89,
+                            "1": "Long Walk to Freedom",
+                            "2": "Nelson Mandela",
+                            "3": 6,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 90,
+                            "1": "Becoming",
+                            "2": "Michelle Obama",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 91,
+                            "1": "Einstein: His Life and Universe",
+                            "2": "Walter Isaacson",
+                            "3": 6,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 92,
+                            "1": "I Am Malala",
+                            "2": "Malala Yousafzai",
+                            "3": 6,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 93,
+                            "1": "The Story of My Experiments with Truth",
+                            "2": "Mahatma Gandhi",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 94,
+                            "1": "Educated",
+                            "2": "Tara Westover",
+                            "3": 6,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 95,
+                            "1": "Alexander Hamilton",
+                            "2": "Ron Chernow",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 96,
+                            "1": "Shoe Dog",
+                            "2": "Phil Knight",
+                            "3": 6,
+                            "4": 6,
+                            "5": 6
+                        },
+                        {
+                            "0": 97,
+                            "1": "The Autobiography of Benjamin Franklin",
+                            "2": "Benjamin Franklin",
+                            "3": 6,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 98,
+                            "1": "My Life in Full",
+                            "2": "Indra Nooyi",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 99,
+                            "1": "Open",
+                            "2": "Andre Agassi",
+                            "3": 6,
+                            "4": 4,
+                            "5": 4
+                        },
+                        {
+                            "0": 100,
+                            "1": "The Story of My Life",
+                            "2": "Helen Keller",
+                            "3": 6,
+                            "4": 5,
+                            "5": 5
+                        },
+                        {
+                            "0": 101,
+                            "1": "Surely You're Joking, Mr. Feynman!",
+                            "2": "Richard Feynman",
+                            "3": 6,
+                            "4": 4,
+                            "5": 4
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "book_id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": true,
+                            "nullable": false,
+                            "autoIncrement": true
+                        },
+                        {
+                            "title": "title",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "author",
+                            "field": "2",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "category_id",
+                            "field": "3",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": null
+                        },
+                        {
+                            "title": "quantity",
+                            "field": "4",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false,
+                            "default": "0"
+                        },
+                        {
+                            "title": "available_quantity",
+                            "field": "5",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false,
+                            "default": "0"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 101 records retrieved in 2.631ms"
+                    },
+                    "totalRowCount": 101,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT * FROM `library_management`.`books`",
+                    "updatable": true,
+                    "fullTableName": "`library_management`.`books`"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 10,
+                "end": 10,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "a4e3b549-eee9-4eb7-ff83-5895094f1d42"
+                    ]
+                },
+                "currentHeight": 352,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 47
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "77416165-927d-46bb-ca92-ce5b7f6dd04d",
+                    "resultId": "a4e3b549-eee9-4eb7-ff83-5895094f1d42",
+                    "rows": [
+                        {
+                            "0": 6,
+                            "1": "Biography"
+                        },
+                        {
+                            "0": 1,
+                            "1": "Fiction"
+                        },
+                        {
+                            "0": 5,
+                            "1": "Mystery"
+                        },
+                        {
+                            "0": 3,
+                            "1": "Science"
+                        },
+                        {
+                            "0": 4,
+                            "1": "Self-Help"
+                        },
+                        {
+                            "0": 2,
+                            "1": "Technology"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "category_id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": true,
+                            "nullable": false,
+                            "autoIncrement": true
+                        },
+                        {
+                            "title": "category_name",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 6 records retrieved in 0.796ms"
+                    },
+                    "totalRowCount": 6,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT * FROM `library_management`.`categories`",
+                    "updatable": true,
+                    "fullTableName": "`library_management`.`categories`"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 11,
+                "end": 11,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "0c07f53a-f9ea-4707-a776-5182ead0a54d"
+                    ]
+                },
+                "currentHeight": 352,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 49
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "77416165-927d-46bb-ca92-ce5b7f6dd04d",
+                    "resultId": "0c07f53a-f9ea-4707-a776-5182ead0a54d",
+                    "rows": [
+                        {
+                            "0": 1,
+                            "1": 11,
+                            "2": 3,
+                            "3": "2026-11-20",
+                            "4": "2026-11-28",
+                            "5": null,
+                            "6": "Issued"
+                        },
+                        {
+                            "0": 2,
+                            "1": 1,
+                            "2": 1,
+                            "3": "2026-11-20",
+                            "4": "2026-12-04",
+                            "5": null,
+                            "6": "Issued"
+                        },
+                        {
+                            "0": 3,
+                            "1": 2,
+                            "2": 2,
+                            "3": "2026-11-20",
+                            "4": "2026-12-04",
+                            "5": null,
+                            "6": "Issued"
+                        },
+                        {
+                            "0": 4,
+                            "1": 3,
+                            "2": 3,
+                            "3": "2026-11-20",
+                            "4": "2026-12-04",
+                            "5": null,
+                            "6": "Issued"
+                        },
+                        {
+                            "0": 5,
+                            "1": 4,
+                            "2": 4,
+                            "3": "2026-11-20",
+                            "4": "2026-12-04",
+                            "5": null,
+                            "6": "Issued"
+                        },
+                        {
+                            "0": 6,
+                            "1": 5,
+                            "2": 5,
+                            "3": "2026-11-20",
+                            "4": "2026-12-04",
+                            "5": null,
+                            "6": "Issued"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "issue_id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": true,
+                            "nullable": false,
+                            "autoIncrement": true
+                        },
+                        {
+                            "title": "student_id",
+                            "field": "1",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "book_id",
+                            "field": "2",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "issue_date",
+                            "field": "3",
+                            "dataType": {
+                                "type": 27,
+                                "needsQuotes": true
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "due_date",
+                            "field": "4",
+                            "dataType": {
+                                "type": 27,
+                                "needsQuotes": true
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "return_date",
+                            "field": "5",
+                            "dataType": {
+                                "type": 27,
+                                "needsQuotes": true
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": null
+                        },
+                        {
+                            "title": "status",
+                            "field": "6",
+                            "dataType": {
+                                "type": 43,
+                                "needsQuotes": true
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": "Issued"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 6 records retrieved in 13.495ms"
+                    },
+                    "totalRowCount": 6,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT * FROM `library_management`.`issued_books`",
+                    "updatable": true,
+                    "fullTableName": "`library_management`.`issued_books`"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 12,
+                "end": 12,
+                "language": "mysql",
+                "result": {
+                    "type": "resultIds",
+                    "list": [
+                        "0448d6ab-f333-48f8-c535-0db5adf6e7e3"
+                    ]
+                },
+                "currentHeight": 352,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 45
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "tabId": "77416165-927d-46bb-ca92-ce5b7f6dd04d",
+                    "resultId": "0448d6ab-f333-48f8-c535-0db5adf6e7e3",
+                    "rows": [
+                        {
+                            "0": 1,
+                            "1": "Pratham",
+                            "2": "pratham@abc.com",
+                            "3": "$2b$10$aGIDNhJlsQqa.RvRKd7jK./kq087YtZ7BCfMKW.EYnpl3QPaTxFL.",
+                            "4": "1234567890",
+                            "5": "2026-11-20 18:11:38"
+                        },
+                        {
+                            "0": 2,
+                            "1": "Aarav Shah",
+                            "2": "aarav.shah@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500001",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 3,
+                            "1": "Diya Patel",
+                            "2": "diya.patel@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500002",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 4,
+                            "1": "Rohan Mehta",
+                            "2": "rohan.mehta@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500003",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 5,
+                            "1": "Ananya Desai",
+                            "2": "ananya.desai@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500004",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 6,
+                            "1": "Vivaan Joshi",
+                            "2": "vivaan.joshi@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500005",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 7,
+                            "1": "Isha Trivedi",
+                            "2": "isha.trivedi@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500006",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 8,
+                            "1": "Kabir Soni",
+                            "2": "kabir.soni@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500007",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 9,
+                            "1": "Myra Shah",
+                            "2": "myra.shah@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500008",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 10,
+                            "1": "Aditya Rao",
+                            "2": "aditya.rao@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500009",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 11,
+                            "1": "Sara Khan",
+                            "2": "sara.khan@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500010",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 12,
+                            "1": "Krish Patel",
+                            "2": "krish.patel@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500011",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 13,
+                            "1": "Avni Bhatt",
+                            "2": "avni.bhatt@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500012",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 14,
+                            "1": "Reyansh Shah",
+                            "2": "reyansh.shah@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500013",
+                            "5": "2026-11-20 18:13:33"
+                        },
+                        {
+                            "0": 15,
+                            "1": "Kiara Modi",
+                            "2": "kiara.modi@example.com",
+                            "3": "$2b$10$abcdefghijklmnopqrstuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+                            "4": "9876500014",
+                            "5": "2026-11-20 18:13:33"
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "student_id",
+                            "field": "0",
+                            "dataType": {
+                                "type": 4,
+                                "flags": [
+                                    "SIGNED",
+                                    "ZEROFILL"
+                                ],
+                                "numericPrecision": 10,
+                                "parameterFormatType": "OneOrZero",
+                                "synonyms": [
+                                    "INTEGER",
+                                    "INT4"
+                                ]
+                            },
+                            "inPK": true,
+                            "nullable": false,
+                            "autoIncrement": true
+                        },
+                        {
+                            "title": "name",
+                            "field": "1",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "email",
+                            "field": "2",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "password",
+                            "field": "3",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": false,
+                            "autoIncrement": false
+                        },
+                        {
+                            "title": "phone",
+                            "field": "4",
+                            "dataType": {
+                                "type": 17,
+                                "characterMaximumLength": 65535,
+                                "flags": [
+                                    "BINARY",
+                                    "ASCII",
+                                    "UNICODE"
+                                ],
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": null
+                        },
+                        {
+                            "title": "created_at",
+                            "field": "5",
+                            "dataType": {
+                                "type": 26,
+                                "dateTimePrecision": 8,
+                                "needsQuotes": true,
+                                "parameterFormatType": "OneOrZero"
+                            },
+                            "inPK": false,
+                            "nullable": true,
+                            "autoIncrement": false,
+                            "default": "CURRENT_TIMESTAMP"
+                        }
+                    ],
+                    "executionInfo": {
+                        "text": "OK, 15 records retrieved in 11.702ms"
+                    },
+                    "totalRowCount": 15,
+                    "hasMoreRows": false,
+                    "currentPage": 0,
+                    "index": 0,
+                    "sql": "SELECT * FROM `library_management`.`students`",
+                    "updatable": true,
+                    "fullTableName": "`library_management`.`students`"
+                }
+            ]
+        },
+        {
+            "state": {
+                "start": 13,
+                "end": 13,
+                "language": "mysql",
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 0
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        }
+    ]
+}

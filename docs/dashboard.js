@@ -1,23 +1,33 @@
 
-async function loadDashboard() {
-    try {
-        const response = await fetch("/api/test-db");
+document.addEventListener("DOMContentLoaded", function () {
 
-        if (!response.ok) {
-            throw new Error("Unable to load dashboard data");
-        }
+    // Demo statistics for the public GitHub Pages website
+    const dashboardData = {
+        totalBooks: 100,
+        availableBooks: 85,
+        totalStudents: 25,
+        issuedBooks: 15
+    };
 
-        const data = await response.json();
+    const totalBooks = document.getElementById("totalBooks");
+    const availableBooks = document.getElementById("availableBooks");
+    const totalStudents = document.getElementById("totalStudents");
+    const issuedBooks = document.getElementById("issuedBooks");
 
-        document.getElementById("totalBooks").textContent =
-            data.totalBooks;
-
-        document.getElementById("availableBooks").textContent =
-            data.totalBooks;
-
-    } catch (error) {
-        console.error("Dashboard error:", error.message);
+    if (totalBooks) {
+        totalBooks.textContent = dashboardData.totalBooks;
     }
-}
 
-loadDashboard();
+    if (availableBooks) {
+        availableBooks.textContent = dashboardData.availableBooks;
+    }
+
+    if (totalStudents) {
+        totalStudents.textContent = dashboardData.totalStudents;
+    }
+
+    if (issuedBooks) {
+        issuedBooks.textContent = dashboardData.issuedBooks;
+    }
+
+});

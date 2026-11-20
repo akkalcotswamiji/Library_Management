@@ -1,7 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Sample records for the public website demo
     const demoBooks = [
         { id: 1, title: "The Alchemist", author: "Paulo Coelho", category: "Fiction", quantity: 10, available: 8 },
         { id: 2, title: "Atomic Habits", author: "James Clear", category: "Self Help", quantity: 8, available: 7 },
@@ -18,17 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const addButton = document.getElementById("addBookBtn");
 
     function displayBooks(books) {
-
         table.innerHTML = "";
 
         if (books.length === 0) {
-            table.innerHTML =
-                '<tr><td colspan="7">No books found.</td></tr>';
+            table.innerHTML = '<tr><td colspan="7">No books found.</td></tr>';
             return;
         }
 
         books.forEach(book => {
-
             const row = document.createElement("tr");
 
             const values = [
@@ -51,12 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Display all sample books
     displayBooks(demoBooks);
 
-    // Search books by title or author
     search.addEventListener("input", function () {
-
         const query = search.value.toLowerCase();
 
         const filteredBooks = demoBooks.filter(book =>
@@ -67,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
         displayBooks(filteredBooks);
     });
 
-    // Public demo does not save new books
     addButton.addEventListener("click", function () {
         alert("This is a public demo. Adding books is available in the local application.");
     });

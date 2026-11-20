@@ -1,96 +1,75 @@
 
-const booksTable = document.getElementById("booksTable");
-const searchBook = document.getElementById("searchBook");
+document.addEventListener("DOMContentLoaded", function () {
 
-let allBooks = [];
+    // Sample records for the public website demo
+    const demoBooks = [
+        { id: 1, title: "The Alchemist", author: "Paulo Coelho", category: "Fiction", quantity: 10, available: 8 },
+        { id: 2, title: "Atomic Habits", author: "James Clear", category: "Self Help", quantity: 8, available: 7 },
+        { id: 3, title: "Clean Code", author: "Robert C. Martin", category: "Technology", quantity: 5, available: 4 },
+        { id: 4, title: "Harry Potter", author: "J.K. Rowling", category: "Fantasy", quantity: 12, available: 10 },
+        { id: 5, title: "The Psychology of Money", author: "Morgan Housel", category: "Finance", quantity: 7, available: 6 },
+        { id: 6, title: "Ikigai", author: "Hector Garcia", category: "Self Help", quantity: 6, available: 5 },
+        { id: 7, title: "Rich Dad Poor Dad", author: "Robert Kiyosaki", category: "Finance", quantity: 9, available: 7 },
+        { id: 8, title: "The Great Gatsby", author: "F. Scott Fitzgerald", category: "Classic", quantity: 5, available: 4 }
+    ];
 
-// FETCH BOOKS FROM MYSQL THROUGH THE API
-async function loadBooks() {
-    try {
-        const response = await fetch("/api/books");
+    const table = document.getElementById("booksTable");
+    const search = document.getElementById("searchBook");
+    const addButton = document.getElementById("addBookBtn");
 
-        if (!response.ok) {
-            throw new Error("Unable to fetch books");
+    function displayBooks(books) {
+
+        table.innerHTML = "";
+
+        if (books.length === 0) {
+            table.innerHTML =
+                '<tr><td colspan="7">No books found.</td></tr>';
+            return;
         }
 
-        allBooks = await response.json();
+        books.forEach(book => {
 
-        displayBooks(allBooks);
+            const row = document.createElement("tr");
 
-    } catch (error) {
-        console.error("Error loading books:", error);
+            const values = [
+                book.id,
+                book.title,
+                book.author,
+                book.category,
+                book.quantity,
+                book.available,
+                "Demo"
+            ];
 
-        booksTable.innerHTML = `
-            <tr>
-                <td colspan="7">
-                    Unable to load books. Please check the server.
-                </td>
-            </tr>
-        `;
-    }
-}
+            values.forEach(value => {
+                const cell = document.createElement("td");
+                cell.textContent = value;
+                row.appendChild(cell);
+            });
 
-
-// DISPLAY BOOKS IN TABLE
-function displayBooks(books) {
-
-    if (books.length === 0) {
-        booksTable.innerHTML = `
-            <tr>
-                <td colspan="7">No books found.</td>
-            </tr>
-        `;
-        return;
+            table.appendChild(row);
+        });
     }
 
-    booksTable.innerHTML = books.map(book => `
-        <tr>
-            <td>${book.book_id}</td>
+    // Display all sample books
+    displayBooks(demoBooks);
 
-            <td>${escapeHTML(book.title)}</td>
+    // Search books by title or author
+    search.addEventListener("input", function () {
 
-            <td>${escapeHTML(book.author)}</td>
+        const query = search.value.toLowerCase();
 
-            <td>${escapeHTML(book.category_name || "Uncategorised")}</td>
+        const filteredBooks = demoBooks.filter(book =>
+            book.title.toLowerCase().includes(query) ||
+            book.author.toLowerCase().includes(query)
+        );
 
-            <td>${book.quantity}</td>
+        displayBooks(filteredBooks);
+    });
 
-            <td>${book.available_quantity}</td>
-
-            <td>
-                <span class="status returned">Available</span>
-            </td>
-        </tr>
-    `).join("");
-}
-
-
-// SAFELY DISPLAY TEXT FROM DATABASE
-function escapeHTML(value) {
-    return String(value).replace(/[&<>"']/g, character => ({
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#39;"
-    })[character]);
-}
-
-
-// SEARCH BOOKS
-searchBook.addEventListener("input", function () {
-
-    const searchValue = this.value.toLowerCase();
-
-    const filteredBooks = allBooks.filter(book =>
-        book.title.toLowerCase().includes(searchValue) ||
-        book.author.toLowerCase().includes(searchValue)
-    );
-
-    displayBooks(filteredBooks);
+    // Public demo does not save new books
+    addButton.addEventListener("click", function () {
+        alert("This is a public demo. Adding books is available in the local application.");
+    });
 
 });
-
-
-// LOAD BOOKS WHEN PAGE OPENS
-loadBooks();

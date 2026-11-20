@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Library Hub | Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">L</div>
+
+            <div>
+                <h2>Library Hub</h2>
+                <span>YOUR READING SPACE</span>
+            </div>
+        </div>
+
+        <p class="menu-label">MAIN MENU</p>
+
+        <nav>
+            <a href="index.html" class="nav-link active">
+                ▦ <span>Dashboard</span>
+            </a>
+
+            <a href="books.html" class="nav-link">
+                ▤ <span>Books</span>
+            </a>
+
+            <a href="students.html" class="nav-link">
+                ♙ <span>Students</span>
+            </a>
+
+            <a href="issued-books.html" class="nav-link">
+                ⇄ <span>Issued Books</span>
+            </a>
+
+            <a href="issued-books.html" class="nav-link">
+                ◷ <span>Returns</span>
+            </a>
+        </nav>
+
+        <p class="menu-label">ACCOUNT</p>
+
+        <nav>
+            <a href="profile.html" class="nav-link">
+                ◉ <span>My Profile</span>
+            </a>
+
+            <a href="login.html" class="nav-link">
+                ↪ <span>Logout</span>
+            </a>
+        </nav>
+
+        <div style="margin-top:auto; padding-top:35px;">
+            <div class="content-card">
+                <h3 style="font-family:'Playfair Display';">
+                    A little reminder ♡
+                </h3>
+
+                <p style="font-size:12px; color:var(--muted); margin-top:10px;">
+                    "A book is a dream that you hold in your hands."
+                </p>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome back! Here's what's happening in your library.</p>
+            </div>
+
+            <div class="profile">
+                <div>
+                    <strong>Library Admin</strong>
+                    <p style="font-size:11px; color:var(--muted);">
+                        Administrator
+                    </p>
+                </div>
+
+                <div class="profile-avatar">A</div>
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME BANNER -->
+
+        <section class="welcome-banner">
+
+            <h2>Your Library, Your Little World ♡</h2>
+
+            <p>
+                Every book has a story waiting to be discovered.
+                Manage your library, explore collections and keep
+                your reading community organised.
+            </p>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon">▤</div>
+                <h3 id="totalBooks">8</h3>
+                <p>Total Books</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⇄</div>
+                <h3 id="issuedBooks">0</h3>
+                <p>Books Issued</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">♙</div>
+                <h3 id="totalStudents">0</h3>
+                <p>Registered Students</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">♡</div>
+                <h3 id="availableBooks">8</h3>
+                <p>Available Books</p>
+            </div>
+
+        </section>
+
+
+        <!-- CONTENT GRID -->
+
+        <section class="content-grid">
+
+
+            <!-- RECENT BOOKS -->
+
+            <div class="content-card">
+
+                <div class="section-heading">
+
+                    <h2>Recently Added Books</h2>
+
+                    <a href="books.html">View all →</a>
+
+                </div>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>BOOK TITLE</th>
+                            <th>AUTHOR</th>
+                            <th>AVAILABLE</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="recentBooks">
+
+                        <tr>
+                            <td>The Alchemist</td>
+                            <td>Paulo Coelho</td>
+                            <td>10</td>
+                        </tr>
+
+                        <tr>
+                            <td>Harry Potter</td>
+                            <td>J.K. Rowling</td>
+                            <td>8</td>
+                        </tr>
+
+                        <tr>
+                            <td>Clean Code</td>
+                            <td>Robert C. Martin</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr>
+                            <td>Atomic Habits</td>
+                            <td>James Clear</td>
+                            <td>7</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- QUICK ACTIONS -->
+
+            <div class="content-card">
+
+                <div class="section-heading">
+                    <h2>Quick Actions</h2>
+                </div>
+
+                <div style="display:flex; flex-direction:column; gap:15px;">
+
+                    <a href="books.html" class="btn">
+                        + Manage Books
+                    </a>
+
+                    <a href="students.html" class="btn">
+                        + View Students
+                    </a>
+
+                    <a href="issued-books.html" class="btn">
+                        + Issue a Book
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LIBRARY COLLECTION -->
+
+        <section class="content-card" style="margin-top:25px;">
+
+            <div class="section-heading">
+
+                <h2>Explore Your Collection</h2>
+
+                <a href="books.html">Explore all →</a>
+
+            </div>
+
+            <div class="book-grid">
+
+                <div class="book-card">
+                    <div class="book-cover">📖</div>
+                    <h3>The Alchemist</h3>
+                    <p>Paulo Coelho</p>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">📚</div>
+                    <h3>Harry Potter</h3>
+                    <p>J.K. Rowling</p>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">📝</div>
+                    <h3>Clean Code</h3>
+                    <p>Robert C. Martin</p>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">🌸</div>
+                    <h3>Atomic Habits</h3>
+                    <p>James Clear</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer style="text-align:center; padding:30px 10px; color:var(--muted); font-size:11px;">
+            Made with ♡ for book lovers | Library Hub © 2026
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
